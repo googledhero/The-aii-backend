@@ -47,9 +47,9 @@ function initDatabase() {
 
 // Create default owner account
 function createOwnerAccount() {
-    const ownerEmail = process.env.OWNER_EMAIL || 'owner@theaii.com';
+    const ownerEmail = process.env.OWNER_EMAIL || 'powwed2@gmail.com';
     const ownerUsername = process.env.OWNER_USERNAME || 'Owner';
-    const ownerPassword = process.env.OWNER_PASSWORD || 'Owner@123';
+    const ownerPassword = process.env.OWNER_PASSWORD || 'Progigagod11';
 
     db.get('SELECT * FROM users WHERE email = ?', [ownerEmail], async (err, user) => {
         if (!user) {
